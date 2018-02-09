@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TeNiuTv.iml" filepath="$PROJECT_DIR$/TeNiuTv.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/statusbar-lib/statusbar-lib.iml" filepath="$PROJECT_DIR$/statusbar-lib/statusbar-lib.iml" />
     </modules>
   </component>
 </project>
