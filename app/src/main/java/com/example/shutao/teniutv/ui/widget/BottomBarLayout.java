@@ -1,14 +1,16 @@
 package com.example.shutao.teniutv.ui.widget;
 
-import android.view.View;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.LinearLayout;
+
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class BottomBarLayout extends LinearLayout implements OnPageChangeListener {

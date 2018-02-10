@@ -11,6 +11,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.example.shutao.teniutv.R.styleable;
+import com.example.shutao.teniutv.R.layout;
+import com.example.shutao.teniutv.R.id;
+
+
 /**
  * Created by shutao on 2018/2/9.
  */
@@ -49,10 +54,10 @@ public class BottomBarItem extends LinearLayout {
         this.mIconNormalResourceId = ta.getResourceId(styleable.BottomBarItem_iconNormal, -1);
         this.mIconSelectedResourceId = ta.getResourceId(styleable.BottomBarItem_iconSelected, -1);
         this.mText = ta.getString(styleable.BottomBarItem_itemText);
-        this.mTextSize = ta.getDimensionPixelSize(styleable.BottomBarItem_itemTextSize, UIUtils.sp2px(this.mContext, (float) this.mTextSize));
+        this.mTextSize = ta.getDimensionPixelSize(styleable.BottomBarItem_itemTextSize, sp2px(this.mContext, (float) this.mTextSize));
         this.mTextColorNormal = ta.getColor(styleable.BottomBarItem_textColorNormal, this.mTextColorNormal);
         this.mTextColorSelected = ta.getColor(styleable.BottomBarItem_textColorSelected, this.mTextColorSelected);
-        this.mMarginTop = ta.getDimensionPixelSize(styleable.BottomBarItem_itemMarginTop, UIUtils.dip2Px(this.mContext, this.mMarginTop));
+        this.mMarginTop = ta.getDimensionPixelSize(styleable.BottomBarItem_itemMarginTop, dip2Px(this.mContext, this.mMarginTop));
         this.mOpenTouchBg = ta.getBoolean(styleable.BottomBarItem_openTouchBg, this.mOpenTouchBg);
         this.mTouchDrawable = ta.getDrawable(styleable.BottomBarItem_touchDrawable);
         ta.recycle();
@@ -110,4 +115,18 @@ public class BottomBarItem extends LinearLayout {
         this.mImageView.setImageResource(isSelected ? this.mIconSelectedResourceId : this.mIconNormalResourceId);
         this.mTextView.setTextColor(isSelected ? this.mTextColorSelected : this.mTextColorNormal);
     }
+
+    public  int sp2px(Context context, float spValue) {
+        float fontScale = context.getResources().getDisplayMetrics().scaledDensity;
+        return (int)(spValue * fontScale + 0.5F);
+    }
+
+
+    public int dip2Px(Context context, int dip) {
+        float density = context.getResources().getDisplayMetrics().density;
+        int px = (int)((float)dip * density + 0.5F);
+        return px;
+    }
+
+
 }

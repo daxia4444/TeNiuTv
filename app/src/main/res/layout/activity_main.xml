@@ -14,14 +14,14 @@
         android:layout_weight="1"
         />
 
-    <com.chaychan.library.BottomBarLayout
+    <com.example.shutao.teniutv.ui.widget.BottomBarLayout
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="@color/color_F3F5F4"
         >
 
-        <com.chaychan.library.BottomBarItem
+        <com.example.shutao.teniutv.ui.widget.BottomBarItem
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -37,7 +37,7 @@
             />
 
 
-        <com.chaychan.library.BottomBarItem
+        <com.example.shutao.teniutv.ui.widget.BottomBarItem
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -52,7 +52,7 @@
             app:touchDrawable="@drawable/selector_bottom_tab"
             />
 
-        <com.chaychan.library.BottomBarItem
+        <com.example.shutao.teniutv.ui.widget.BottomBarItem
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -67,7 +67,7 @@
             app:touchDrawable="@drawable/selector_bottom_tab"
             />
 
-        <com.chaychan.library.BottomBarItem
+        <com.example.shutao.teniutv.ui.widget.BottomBarItem
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -81,6 +81,6 @@
             app:openTouchBg="true"
             app:touchDrawable="@drawable/selector_bottom_tab"
             />
-    </com.chaychan.library.BottomBarLayout>
+    </com.example.shutao.teniutv.ui.widget.BottomBarLayout>
 
 </LinearLayout>
