@@ -15,37 +15,33 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 
 import com.example.shutao.teniutv.R;
+import com.example.shutao.teniutv.app.MyApp;
 
 import butterknife.ButterKnife;
 
 public class SplashActivity extends Activity {
 
-
     protected Bundle savedInstanceState;
-    public Handler mhandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.savedInstanceState = savedInstanceState;
         setContentView(R.layout.activity_splash);
+        //setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
-        translucentStatusBar(this, false);//
-
-        //initView();
+        translucentStatusBar(this, false);
+        initView();
     }
 
 
     public void initView() {
 
-
-        mhandler = new Handler();
-        mhandler.postDelayed(new Runnable() {
+        MyApp.getMainHandler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 startActivity(new Intent(SplashActivity.this, MainActivity.class));
-                finish();
+                SplashActivity.this.finish();
             }
         }, 2000);
     }

@@ -33,8 +33,8 @@ public class BottomBarLayout extends LinearLayout implements OnPageChangeListene
 
     public BottomBarLayout(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        this.mItemViews = new ArrayList();
-        this.setOrientation(0);
+        this.mItemViews = new ArrayList<BottomBarItem>();
+        this.setOrientation(LinearLayout.HORIZONTAL);
     }
 
     public void setOrientation(int orientation) {
