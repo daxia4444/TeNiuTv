@@ -7,4 +7,10 @@
     <string name="tab_video">视频</string>
     <string name="tab_micro">微头条</string>
     <string name="tab_me">我的</string>
+
+
+    <string name="text_empty">No data!</string>
+    <string name="text_retry">Something went wrong!\n\nTap to retry</string>
+    <string name="net_error_msg">网络不给力</string>
+
 </resources>
