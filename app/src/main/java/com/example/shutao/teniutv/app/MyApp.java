@@ -11,12 +11,18 @@ import android.os.Handler;
 public class MyApp extends Application {
 
     private static Handler mHandler;//主线程Handler
+    private static Context mContext;//上下文
 
     @Override
     public void onCreate() {
         super.onCreate();
+        mContext = getApplicationContext();
         mHandler = new Handler();
 
+    }
+
+    public static Context getContext() {
+        return mContext;
     }
 
     public static Handler getMainHandler() {

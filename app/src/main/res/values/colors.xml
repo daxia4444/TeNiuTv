@@ -9,4 +9,6 @@
     <color name="color_515051">#515051</color>
     <color name="selector_grey">#DDDDDD</color>
     <color name="color_f85959">#f85959</color>
+    <color name="text_grey">#AEAEAE</color>
+    <color name="subscribe_category_bar_bg_night">#cc363636</color>
 </resources>
